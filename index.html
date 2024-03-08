@@ -8,12 +8,22 @@
 </head>
 <body>
     <nav>
-        <a href="#" onclick="navigateTo('https://example.com/passport')">Passport Application</a>
-        <a href="#" onclick="navigateTo('https://example.com/national_id')">National ID</a>
-        <a href="#" onclick="navigateTo('https://example.com/about_us')">About Us</a>
-        <a href="#" onclick="navigateTo('https://example.com/contact')">Contact</a>
+        <a href="#" onclick="navigateTo('https://manilapass.github.io/MPMB/')">Passport Application</a>
+        <a href="#" onclick="navigateTo('https://manilapass.github.io/MPNI/')">National ID</a>
+        <a href="#" onclick="smoothScroll('#about_us')">About Us</a>
+        <a href="#" onclick="smoothScroll('#contact')">Contact</a>
     </nav>
     
+    <section id="about_us">
+        <h2>About Us</h2>
+        <!-- Information about the organization or company -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact information or contact form -->
+    </section>
+
     <footer>
         <p>&copy; 2024 Menu Hub. All rights reserved.</p>
     </footer>
@@ -22,6 +32,12 @@
     <script>
         function navigateTo(url) {
             window.location.href = url;
+        }
+        
+        function smoothScroll(target) {
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     </script>
 </body>
