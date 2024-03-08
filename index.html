@@ -8,36 +8,21 @@
 </head>
 <body>
     <nav>
-        <a href="#" onclick="smoothScroll('#passport')">Passport Application</a>
-        <a href="#" onclick="smoothScroll('#national_id')">National ID</a>
-        <a href="#" onclick="smoothScroll('#about_us')">About Us</a>
-        <a href="#" onclick="smoothScroll('#contact')">Contact</a>
+        <a href="#" onclick="navigateTo('https://example.com/passport')">Passport Application</a>
+        <a href="#" onclick="navigateTo('https://example.com/national_id')">National ID</a>
+        <a href="#" onclick="navigateTo('https://example.com/about_us')">About Us</a>
+        <a href="#" onclick="navigateTo('https://example.com/contact')">Contact</a>
     </nav>
     
-    <section id="passport">
-        <h2>Passport Application</h2>
-        <!-- Content related to passport application -->
-    </section>
-
-    <section id="national_id">
-        <h2>National ID Application</h2>
-        <!-- Content related to national ID application -->
-    </section>
-
-    <section id="about_us">
-        <h2>About Us</h2>
-        <!-- Information about the organization or company -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <!-- Contact information or contact form -->
-    </section>
-
     <footer>
         <p>&copy; 2024 Menu Hub. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
